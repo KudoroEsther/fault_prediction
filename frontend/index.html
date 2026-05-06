@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBot | Fault Analysis</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="./js/app.js"></script>
+</head>
+<body>
+    <main class="shell">
+        <section class="hero">
+            <p class="eyebrow">Transmission Line Monitoring</p>
+            <h1>PowerBot</h1>
+            <p class="lede">Submit three-phase voltage and current readings to predict a fault and generate an engineering-focused diagnosis.</p>
+        </section>
+
+        <section class="panel">
+            <header class="panel-header">
+                <div>
+                    <h2>Fault Console</h2>
+                    <p>FastAPI backend + ML classifier + RAG diagnosis</p>
+                </div>
+                <span class="status-pill">Live Analysis</span>
+            </header>
+
+            <div id="messagesContainer" class="messages"></div>
+
+            <form id="faultForm" class="form-grid">
+                <label>
+                    <span>Va</span>
+                    <input type="number" step="any" id="Va" placeholder="220.0" required>
+                </label>
+                <label>
+                    <span>Vb</span>
+                    <input type="number" step="any" id="Vb" placeholder="220.0" required>
+                </label>
+                <label>
+                    <span>Vc</span>
+                    <input type="number" step="any" id="Vc" placeholder="220.0" required>
+                </label>
+                <label>
+                    <span>Ia</span>
+                    <input type="number" step="any" id="Ia" placeholder="10.0" required>
+                </label>
+                <label>
+                    <span>Ib</span>
+                    <input type="number" step="any" id="Ib" placeholder="10.0" required>
+                </label>
+                <label>
+                    <span>Ic</span>
+                    <input type="number" step="any" id="Ic" placeholder="10.0" required>
+                </label>
+                <button id="analyzeBtn" type="submit">Analyze Fault</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
