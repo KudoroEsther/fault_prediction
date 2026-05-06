@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api import diagnose, health, predict
+from app.api import diagnose, health, predict
 
 app = FastAPI(title="PowerBot")
 
