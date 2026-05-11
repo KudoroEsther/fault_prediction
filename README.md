@@ -53,6 +53,17 @@ Fault_Analysis/
 - The dataset has been moved to `data/raw/merged_dataset.csv`.
 - Place RAG source documents in `data/raw/docs/` before running the vector store build script.
 
+## Model Performance
+
+| Metric    | Score  |
+|-----------|--------|
+| Accuracy  | ~99%   |
+| Precision | ~99%   |
+| Recall    | ~98%   |
+| F1 Score  | ~98%   |
+
+Evaluated across 4 fault classes on held-out test data.
+
 ## Local Run
 
 1. Create a virtual environment and install dependencies.
